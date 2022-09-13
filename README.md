@@ -1,6 +1,6 @@
 # capstone2
----------------------------------------------------------------------------------------------------------
-covid-19 project
+
+**covid-19 project**
 ---------------------------------------------------------------------------------------------------------
   Deploying a covid-19 website on AWS S3 This section describes how to deploy the angular application and host them in the AWS S3 service.
 
@@ -31,13 +31,14 @@ First, let’s go to the Permissions tab and click on the Edit button. Here, the
 Next, you need to apply a policy that will grant anonymous users to access our data. We can copy the following policy and paste it under the Manage bucket policy section. You need to change the bucket name with your current existing bucket in the Resource property of the JSON object. 11.Also, it’s very important to only grant GetObject to the users and not PUT, DELETE, etc any kind of Edit access in order to prevent any security issues.
 
 Deploy the Angular build Now let’s copy the angular build output (unzip dist.rar and copy the whole folder contents) that we discussed initially in the article generated at the dist path and upload it in S3. Once the files are successfully uploaded, you can navigate to the S3 endpoint URL and verify the application is up and running.
----------------------------------------------------------------------------------------------------------------
-s3-config-check project
+
+
+**s3-config-check project**
 ---------------------------------------------------------------------------------------------------------------
 This python script checks the configuration on the deployed S3 buckets for MFA delete and Versioning. Configure your AWS user credentials having access to the S3 buckets using AWS configure command. Run the python script and an excel sheet will be created on same folder location with bucket config details like MFA delete, S3 versioning and recommendations.
 
----------------------------------------------------------------------------------------------------------------
-ec2-wordpress project
+
+**ec2-wordpress project**
 ---------------------------------------------------------------------------------------------------------------
 Deploying a WordPress website on AWS EC2: This link provides information on how EC2 and RDS configuration is done on wp-config file once wordpress code is downloaded and extracted on EC2. The sample snapshots can be reviewed on below link: https://www.linkedin.com/pulse/integration-aws-ec2-wordpress-using-rds-pratik-kohad
 
